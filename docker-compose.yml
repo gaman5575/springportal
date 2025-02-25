@@ -5,10 +5,10 @@ services:
     container_name: mysql_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root@007
+      MYSQL_ROOT_PASSWORD: <>
       MYSQL_DATABASE: springdb
       MYSQL_USER: springuser
-      MYSQL_PASSWORD: Test@007
+      MYSQL_PASSWORD: <>
     ports:
       - "3307:3306"
     volumes:
@@ -22,7 +22,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/springdb?useSSL=false&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: springuser
-      SPRING_DATASOURCE_PASSWORD: Test@007
+      SPRING_DATASOURCE_PASSWORD: <>
     ports:
       - "8081:8081"
     restart: always
